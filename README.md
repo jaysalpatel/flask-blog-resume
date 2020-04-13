@@ -12,6 +12,12 @@ git push -u origin master
 
 To run after pip install flask
 
-1. python flask.blog.py
+1. pip install flask
+
+2. python flask.blog.py
 
 it will run on localhost:5000
+
+Build docker image in the working directory of the dockerfile
+
+docker build -t flask-blog .
