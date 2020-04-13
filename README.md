@@ -9,6 +9,15 @@ git commit -m "example commit"
 git remote add origin https://github.com/jaysalpatel/flask-blog
 git push -u origin master
 
+git remote add origin https://github.com/jaysalpatel/flask-blog
+git push -u origin master
+
+
+##if git push hangs use this command
+git remote set-url origin https://github.com/jaysalpatel/flask-blog 
+git push --force origin master
+git config --global core.askpass "git-gui--askpass"
+git checkout master
 
 To run after pip install flask
 
