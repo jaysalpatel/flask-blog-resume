@@ -30,3 +30,10 @@ it will run on localhost:5000
 Build docker image in the working directory of the dockerfile
 
 docker build -t flask-blog .
+
+##start up a kubernetes cluster
+minikube start
+
+###Deploying app on kubernetes
+
+kubectl apply -f deployment.yaml
