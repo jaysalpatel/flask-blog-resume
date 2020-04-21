@@ -1,4 +1,6 @@
 ###Resume running on Flask Framework in python
+
+###Creating a service and deployment on kubernetes
 ##It will display static HTML, CSS files
 
 
@@ -39,13 +41,3 @@ minikube start
 kubectl apply -f deployment.yaml
 
 
-###solution to incomplete kubeconfig file
-
-
-//Start with fresh file rm ~/.kube/config
-
-//Update with the context you want aws eks update-kubeconfig --name eks-cluster --region us-east-1
-
-//Use kubectl to delete the context kubectl config delete-context arn:aws:eks:us-east-1:536510685689:cluster/eks-cluster
-
-//reapply the config aws eks update-kubeconfig --name eks-cluster --region us-east-1
