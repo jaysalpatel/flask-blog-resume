@@ -33,11 +33,17 @@ Build docker image in the working directory of the dockerfile
 
 docker build -t flask-blog .
 
-##start up a kubernetes cluster
+Start single-node kubernetes cluster
+
 minikube start
 
-###Deploying app on kubernetes
+Apply deployment and service to cluster
 
 kubectl apply -f deployment.yaml
 
+###this file exposes a load balancer exposing port 6000 with the targetport 5000 on the pods targeted by the service
 
+kubectl get services  ##lists all services in the namespace
+kubectl get pods -o wide   ##list all pods in the current namespace
+
+kubectl cluster-info  ##displays addresses of the master node and services
