@@ -5,6 +5,8 @@
 
 
 Git steps to push local repo to github page
+
+
 git init 
 git add .
 git commit -m "example commit"
@@ -16,6 +18,8 @@ git push -u origin master
 
 
 ##if git push hangs use this command
+
+
 git remote set-url origin https://github.com/jaysalpatel/flask-blog 
 git push --force origin master
 git config --global core.askpass "git-gui--askpass"
