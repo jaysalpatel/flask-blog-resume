@@ -1,3 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-blog-service
+spec:
+  selector:
+    app: flask-blog
+  ports:
+  - protocol: "TCP"
+    port: 6000
+    targetPort: 5000
+  type: LoadBalancer
+
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,4 +31,8 @@ spec:
         image: flask-blog:latest
         imagePullPolicy: Never
         ports:
+<<<<<<< HEAD
         - containerPort: 5000
+=======
+        - containerPort: 5000
+>>>>>>> fc9388853024e6e4bea54e3b76c71b7347e63c8d
