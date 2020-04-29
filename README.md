@@ -25,6 +25,23 @@ git push --force origin master
 git config --global core.askpass "git-gui--askpass"
 git checkout master
 
+
+Other errors failed to push some refs because the remote on git push
+###resets the index file or the working tree
+
+git reset --hard
+
+
+####Updates were rejected because the remote contains work that you do
+##hint: not have locally.
+##git push: error pushed to refs,
+git pull https://github.com/jaysalpatel/flask-blog.git master:dev
+
+### if pushing to other remote urls
+git remote -v
+git remote rm codecommit-origin
+
+
 To run after pip install flask
 
 1. pip install flask
