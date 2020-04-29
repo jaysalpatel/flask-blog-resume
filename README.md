@@ -47,6 +47,9 @@ git pull https://github.com/jaysalpatel/flask-blog.git master:dev
 git remote -v
 git remote rm codecommit-origin
 
+###fix git tip of your current branch is behind its rmeote counterpart
+###there have been changes on the remote branch that you do not have locally
+git reset --hard origin/master
 
 To run after pip install flask
 
