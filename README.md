@@ -94,3 +94,10 @@ kubectl get services  ##lists all services in the namespace
 kubectl get pods -o wide   ##list all pods in the current namespace
 
 kubectl cluster-info  ##displays addresses of the master node and services
+
+
+
+
+
+For no basic auth when pushing locally built docker image to ECR
+$(aws ecr get-login --no-include-email)
